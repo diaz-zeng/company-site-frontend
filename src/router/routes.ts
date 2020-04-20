@@ -13,11 +13,12 @@ const SoftwareOutsourcing = () =>
   import(/* webpackChunkName: "Service" */ "../views/SoftwareOutsourcing.vue");
 const SoftwareTest = () =>
   import(/* webpackChunkName: "Service" */ "../views/SoftwareTest.vue");
-const Rpa = () => import(/* webpackChunkName: "Service" */ "../views/Rpa.vue");
-const Cooperation = () =>
-  import(/* webpackChunkName: "Service" */ "../views/Cooperation.vue");
+const Rpa = () =>
+  import(/* webpackChunkName: "Solutions/" */ "../views/Rpa.vue");
 const Internet = () =>
-  import(/* webpackChunkName: "Service" */ "../views/Internet.vue");
+  import(/* webpackChunkName: "Solutions/" */ "../views/Internet.vue");
+const Cooperation = () =>
+  import(/* webpackChunkName: "Cooperation/" */ "../views/Cooperation.vue");
 const routes: Array<RouteConfig> = [
   {
     path: "/",
@@ -49,19 +50,19 @@ const routes: Array<RouteConfig> = [
         component: SoftwareTest
       },
       {
-        path: "rpa",
+        path: "solutions/rpa",
         name: "rpa",
         component: Rpa
+      },
+      {
+        path: "solutions/internet",
+        name: "internet",
+        component: Internet
       },
       {
         path: "cooperation",
         name: "cooperation",
         component: Cooperation
-      },
-      {
-        path: "internet",
-        name: "internet",
-        component: Internet
       }
     ]
   },
