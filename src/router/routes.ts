@@ -14,11 +14,11 @@ const SoftwareOutsourcing = () =>
 const SoftwareTest = () =>
   import(/* webpackChunkName: "Service" */ "../views/SoftwareTest.vue");
 const Rpa = () =>
-  import(/* webpackChunkName: "Solutions/" */ "../views/Rpa.vue");
+  import(/* webpackChunkName: "Solutions" */ "../views/Rpa.vue");
 const Internet = () =>
-  import(/* webpackChunkName: "Solutions/" */ "../views/Internet.vue");
+  import(/* webpackChunkName: "Solutions" */ "../views/Internet.vue");
 const Cooperation = () =>
-  import(/* webpackChunkName: "Cooperation/" */ "../views/Cooperation.vue");
+  import(/* webpackChunkName: "Cooperation" */ "../views/Cooperation.vue");
 const routes: Array<RouteConfig> = [
   {
     path: "/",
