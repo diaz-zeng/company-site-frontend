@@ -18,7 +18,6 @@ const Cooperation = () =>
   import(/* webpackChunkName: "Service" */ "../views/Cooperation.vue");
 const Internet = () =>
   import(/* webpackChunkName: "Service" */ "../views/Internet.vue");
-
 const routes: Array<RouteConfig> = [
   {
     path: "/",
