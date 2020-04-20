@@ -7,7 +7,7 @@
   </div>
 </template>
 <script lang="ts">
-import { Vue, Component } from "vue-property-decorator";
+import { Vue, Component } from 'vue-property-decorator'
 @Component
 export default class NotFound extends Vue {}
 </script>
@@ -28,6 +28,7 @@ body {
       min-width: 100%;
       text-align: center;
       font-size: 32px;
+      color: #777777;
     }
     .code {
       font-size: 48px;
