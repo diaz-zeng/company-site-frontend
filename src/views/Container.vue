@@ -40,12 +40,8 @@
               <template slot="title">
                 <span class="title">行业解决方案</span>
               </template>
-              <el-menu-item index="3-1"
-                >业务流程自动化（RPA，AI，BPM）</el-menu-item
-              >
-              <el-menu-item index="3-2"
-                >工控设备物联网（数据采集，远程监控，资产管理，数据分析）</el-menu-item
-              >
+              <el-menu-item index="/Rpa">业务流程自动化</el-menu-item>
+              <el-menu-item index="/Internet">工控设备物联网</el-menu-item>
               <el-menu-item index="3-3">流程行业系统集成</el-menu-item>
               <el-submenu index="3-4">
                 <template slot="title">智慧产业</template>
@@ -60,7 +56,7 @@
                 <span class="title">行业案例</span>
               </template>
             </el-menu-item>
-            <el-menu-item index="5">
+            <el-menu-item index="Cooperation">
               <template slot="title">
                 <span class="title">商务合作</span>
               </template>
