@@ -1,6 +1,7 @@
+<p align="center">
+    <a href="https://github.com/zly981026/company-site-frontend"><img alt="GitHub Actions status" src="https://github.com/zly981026/company-site-frontend/workflows/Published%20to%20GitHub%20Pages/badge.svg"></a>
+</p>
 # company-site-frontend
-
-![CI](https://github.com/zly981026/company-site-frontend/workflows/CI/badge.svg?branch=master)
 
 ## Project setup
 ```
