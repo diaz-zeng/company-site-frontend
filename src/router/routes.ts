@@ -23,6 +23,9 @@ const routes: Array<RouteConfig> = [
   {
     path: "/",
     component: Container,
+    meta: {
+      title: "数和信息技术(上海)有限公司"
+    },
     children: [
       {
         path: "",
