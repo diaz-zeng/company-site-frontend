@@ -23,14 +23,14 @@ const routes: Array<RouteConfig> = [
   {
     path: "/",
     component: Container,
-    meta: {
-      title: "数和信息技术(上海)有限公司"
-    },
     children: [
       {
         path: "",
         name: "index",
-        component: Index
+        component: Index,
+        meta: {
+          title: "数和信息技术(上海)有限公司"
+        }
       },
       {
         path: "about",
@@ -73,8 +73,8 @@ const routes: Array<RouteConfig> = [
     path: "*",
     name: "notFound",
     component: NotFound,
-    meta:{
-      title:"Sorry! Page Not Found!"
+    meta: {
+      title: "Sorry! Page Not Found!"
     }
   }
 ];
