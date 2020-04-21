@@ -3,6 +3,5 @@ module.exports = {
     devtool: "source-map"
   },
   outputDir: "dist",
-  publicPath:
-    process.env.NODE_ENV === "production" ? "/company-site-frontend/" : "/"
+  publicPath: "/"
 };
