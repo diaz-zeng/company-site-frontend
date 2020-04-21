@@ -2,6 +2,7 @@
   "name": "company-site-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://zly981026.github.io/company-site-frontend",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
