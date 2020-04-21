@@ -1,5 +1,7 @@
 # company-site-frontend
 
+![CI](https://github.com/zly981026/company-site-frontend/workflows/CI/badge.svg?branch=master)
+
 ## Project setup
 ```
 yarn install
