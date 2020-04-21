@@ -72,7 +72,10 @@ const routes: Array<RouteConfig> = [
   {
     path: "*",
     name: "notFound",
-    component: NotFound
+    component: NotFound,
+    meta:{
+      title:"Sorry! Page Not Found!"
+    }
   }
 ];
 
