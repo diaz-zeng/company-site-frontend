@@ -16,5 +16,5 @@ router.beforeEach((to: Route, from: Route, next: Function): any => {
     document.title = to.meta.title;
   }
   next();
-})
+});
 export default router;

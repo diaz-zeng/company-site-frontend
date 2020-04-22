@@ -53,11 +53,6 @@
                 <el-menu-item index="3-4-3">智慧环保</el-menu-item>
               </el-submenu>
             </el-submenu>
-            <el-menu-item index="4">
-              <template slot="title">
-                <span class="title">行业案例</span>
-              </template>
-            </el-menu-item>
             <el-menu-item index="/cooperation">
               <template slot="title">
                 <span class="title">商务合作</span>
@@ -70,6 +65,40 @@
     <el-main class="no-padding">
       <router-view />
     </el-main>
+    <el-footer class="footer" height="300px">
+      <el-row>
+        <el-col :span="4">
+          <p class="title">关于我们</p>
+          <el-link class="link" type="info" :underline="false" href="/about"
+            >企业介绍</el-link
+          >
+        </el-col>
+        <el-col :span="4">
+          <p class="title">软件服务</p>
+          <el-link
+            class="link"
+            type="info"
+            :underline="false"
+            href="/service/custom_software"
+            >软件定制开发</el-link
+          >
+          <el-link
+            class="link"
+            type="info"
+            :underline="false"
+            href="/service/software_outsourcing"
+            >全球软件外包</el-link
+          >
+          <el-link
+            class="link"
+            type="info"
+            :underline="false"
+            href="/service/software_test"
+            >软件测试及第三方认证测试</el-link
+          >
+        </el-col>
+      </el-row>
+    </el-footer>
   </el-container>
 </template>
 <script lang="ts">
@@ -113,6 +142,20 @@ body {
           margin-right: 15px;
         }
       }
+    }
+  }
+  .footer {
+    background-color: #2e3033;
+    padding: 0 18%;
+    padding-top: 15px;
+    color: white;
+    .title {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+    .link {
+      display: block;
+      line-height: 28px;
     }
   }
 }
