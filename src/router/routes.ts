@@ -35,37 +35,58 @@ const routes: Array<RouteConfig> = [
       {
         path: "about",
         name: "about",
-        component: About
+        component: About,
+        meta: {
+          title: "关于我们"
+        }
       },
       {
         path: "service/custom_software",
         name: "customSoftware",
-        component: CustomSoftware
+        component: CustomSoftware,
+        meta: {
+          title: "定制软件开发"
+        }
       },
       {
         path: "service/software_outsourcing",
         name: "softwareOutsourcing",
-        component: SoftwareOutsourcing
+        component: SoftwareOutsourcing,
+        meta: {
+          title: "全球软件外包"
+        }
       },
       {
         path: "service/software_test",
         name: "softwareTest",
-        component: SoftwareTest
+        component: SoftwareTest,
+        meta: {
+          title: "软件测试及第三方认证测试"
+        }
       },
       {
         path: "solutions/rpa",
         name: "rpa",
-        component: Rpa
+        component: Rpa,
+        meta: {
+          title: "RPA业务流程自动化"
+        }
       },
       {
         path: "solutions/internet",
         name: "internet",
-        component: Internet
+        component: Internet,
+        meta: {
+          title: "工控设备物联网"
+        }
       },
       {
         path: "cooperation",
         name: "cooperation",
-        component: Cooperation
+        component: Cooperation,
+        meta: {
+          title: "商务合作"
+        }
       }
     ]
   },
