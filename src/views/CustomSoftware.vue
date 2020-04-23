@@ -128,6 +128,7 @@ export default class CustomSoftware extends Vue {
 }
 </script>
 <style lang="less" scoped>
+@import "../less/variables.less";
 .custom-software {
   .title {
     line-height: 48px;
@@ -136,8 +137,8 @@ export default class CustomSoftware extends Vue {
     margin-bottom: 60px;
   }
   .service-area {
-    padding: 15px 18%;
-    width: calc(100% - 36%);
+    padding: @content-area-padding;
+    width: @content-area-width;
     height: 450px;
     background-color: #f3f3f3;
 
@@ -160,8 +161,10 @@ export default class CustomSoftware extends Vue {
     }
   }
   .advantages {
-    padding: 15px 18%;
-    width: calc(100% - 36%);
+    padding: @content-area-padding;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: @content-area-width;
     margin-bottom: 60px;
     .big-icon {
       width: 120px;

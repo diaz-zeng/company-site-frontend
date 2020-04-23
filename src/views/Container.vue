@@ -146,7 +146,7 @@ body {
   }
   .footer {
     background-color: #2e3033;
-    padding: 0 18%;
+    padding: @content-area-padding;
     padding-top: 15px;
     color: white;
     .title {
