@@ -8,6 +8,9 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "dependencies": {
     "core-js": "^3.6.4",
     "element-ui": "^2.4.5",
