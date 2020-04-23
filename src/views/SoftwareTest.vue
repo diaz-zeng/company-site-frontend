@@ -10,6 +10,135 @@
       :content="content"
       :src="require('../assets/img/software_test.png')"
     />
+    <div class="service-area">
+      <p class="title">涉及领域</p>
+      <el-row type="flex" justify="space-around">
+        <el-col :span="4" class="item">
+          <i class="icon el-icon-shopping-bag-1" />
+          <p class="font">环保</p>
+        </el-col>
+        <el-col :span="4" class="item">
+          <i class="icon el-icon-suitcase-1" />
+          <p class="font">电子政务</p>
+        </el-col>
+        <el-col :span="4" class="item">
+          <i class="icon el-icon-s-data" />
+          <p class="font">电子商务</p>
+        </el-col>
+        <el-col :span="4" class="item">
+          <i class="icon el-icon-office-building" />
+          <p class="font">互联网药品行业</p>
+        </el-col>
+        <el-col :span="4" class="item">
+          <i class="icon el-icon-fork-spoon" />
+          <p class="font">通信</p>
+        </el-col>
+      </el-row>
+      <el-row type="flex" justify="space-around">
+        <el-col :span="4" class="item">
+          <i class="icon el-icon-data-board" />
+          <p class="font">移动APP</p>
+        </el-col>
+        <el-col :span="4" class="item">
+          <i class="icon el-icon-collection" />
+          <p class="font">网站</p>
+        </el-col>
+        <el-col :span="4" class="item">
+          <i class="icon el-icon-first-aid-kit" />
+          <p class="font">烟草</p>
+        </el-col>
+        <el-col :span="4" class="item">
+          <i class="icon el-icon-truck" />
+          <p class="font">环保</p>
+        </el-col>
+        <el-col :span="4" class="item">
+          <i class="icon el-icon-money" />
+          <p class="font">金融</p>
+        </el-col>
+      </el-row>
+      <el-row type="flex" justify="space-around">
+        <el-col :span="4" class="item">
+          <i class="icon el-icon-data-board" />
+          <p class="font">电力</p>
+        </el-col>
+        <el-col :span="4" class="item">
+          <i class="icon el-icon-collection" />
+          <p class="font">广电</p>
+        </el-col>
+        <el-col :span="4" class="item">
+          <i class="icon el-icon-first-aid-kit" />
+          <p class="font">餐饮</p>
+        </el-col>
+        <el-col :span="4" class="item">
+          <i class="icon el-icon-truck" />
+          <p class="font">通用ERP</p>
+        </el-col>
+        <el-col :span="4" class="item">
+          <i class="icon el-icon-money" />
+          <p class="font">其他</p>
+        </el-col>
+      </el-row>
+    </div>
+
+    <div class="scope ">
+      <p class="title">服务范围</p>
+    </div>
+
+    <div class="advantages">
+      <p class="title">第三方测试的特点与优势</p>
+      <el-row :gutter="10" type="flex" justify="space-around">
+        <el-col :span="8">
+          <div class="big-icon" style="background-color:#77dce7;">
+            <i class="el-icon-medal"></i>
+          </div>
+          <p class="text-content">
+            管理成本降低
+          </p>
+        </el-col>
+        <el-col :span="8">
+          <div class="big-icon" style="background-color:#59afff;">
+            <i class="el-icon-copy-document"></i>
+          </div>
+          <p class="text-content">
+            公平公正性、独立客观性
+          </p>
+        </el-col>
+        <el-col :span="8">
+          <div class="big-icon" style="background-color:#f2764b;">
+            <i class="el-icon-discover"></i>
+          </div>
+          <p class="text-content">
+            专业项目监理
+          </p>
+        </el-col>
+      </el-row>
+      <el-row :gutter="10" type="flex" justify="space-around">
+        <el-col :span="8">
+          <div class="big-icon" style="background-color:#597cff;">
+            <i class="el-icon-user"></i>
+          </div>
+          <p class="text-content">
+            客观专业的测试结果
+          </p>
+        </el-col>
+        <el-col :span="8">
+          <div class="big-icon" style="background-color:#fdbf3a;">
+            <i class="el-icon-trophy"></i>
+          </div>
+          <p class="text-content">
+            专业的测试团队及测试服务
+          </p>
+        </el-col>
+        <el-col :span="8">
+          <div class="big-icon" style="background-color:#5fdb7e;">
+            <i class="el-icon-circle-check"></i>
+          </div>
+          <p class="text-content">
+            项目成本控制
+          </p>
+        </el-col>
+      </el-row>
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -28,4 +157,73 @@ export default class SoftwareTest extends Vue {
   ];
 }
 </script>
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+.software-test {
+  .title {
+    line-height: 48px;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .service-area {
+    padding: 15px 18%;
+    width: calc(100% - 36%);
+    height: 500px;
+    background-color: #f3f3f3;
+
+    .item {
+      .icon,
+      .font {
+        color: #74808f;
+      }
+      .icon {
+        display: block;
+        font-size: 72px;
+        width: 100%;
+        text-align: center;
+      }
+      .font {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+      }
+    }
+  }
+  .scope {
+    padding: 15px 18%;
+    width: calc(100% - 36%);
+    margin-bottom: 60px;
+    background: url(../assets/img/bg-scopen.jpg) no-repeat;
+    padding-bottom: 130px;
+    height: 500px;
+    text-align: center;
+    color: white;
+  }
+  .advantages {
+    padding: 15px 18%;
+    width: calc(100% - 36%);
+    margin-bottom: 60px;
+    background-color: #f3f3f3;
+    .big-icon {
+      width: 120px;
+      height: 120px;
+      margin: 0 calc(50% - 60px);
+      border-radius: 50%;
+      margin-bottom: 30px;
+      i {
+        font-size: 38px;
+        line-height: 120px;
+        width: 120px;
+        text-align: center;
+        color: white;
+      }
+    }
+    .text-content {
+      width: 100%;
+      font-size: 16px;
+      line-height: 34px;
+      text-align: center;
+    }
+  }
+}
+</style>
