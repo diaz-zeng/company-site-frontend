@@ -5,7 +5,7 @@
       title="联系我们"
       content="为客户提供专业、优质的服务"
     />
-    <briefing title="什么是RPA" />
+    <briefing :src="require('../assets/img/map.png')" />
   </div>
 </template>
 <script lang="ts">
