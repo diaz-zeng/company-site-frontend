@@ -19,6 +19,7 @@ const Internet = () =>
   import(/* webpackChunkName: "Solutions" */ "../views/Internet.vue");
 const Cooperation = () =>
   import(/* webpackChunkName: "Cooperation" */ "../views/Cooperation.vue");
+const Join = () => import(/* webpackChunkName: "Join" */ "../views/Join.vue");
 const routes: Array<RouteConfig> = [
   {
     path: "/",
@@ -81,11 +82,19 @@ const routes: Array<RouteConfig> = [
         }
       },
       {
-        path: "cooperation",
+        path: "service/cooperation",
         name: "cooperation",
         component: Cooperation,
         meta: {
-          title: "商务合作"
+          title: "联系我们"
+        }
+      },
+      {
+        path: "service/join",
+        name: "join",
+        component: Join,
+        meta: {
+          title: "加入我们"
         }
       }
     ]

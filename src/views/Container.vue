@@ -53,11 +53,13 @@
                 <el-menu-item index="3-4-3">智慧环保</el-menu-item>
               </el-submenu>
             </el-submenu>
-            <el-menu-item index="/cooperation">
+            <el-submenu index="4">
               <template slot="title">
-                <span class="title">商务合作</span>
+                <span class="title">软件服务</span>
               </template>
-            </el-menu-item>
+              <el-menu-item index="/service/cooperation">联系我们</el-menu-item>
+              <el-menu-item index="/service/join">加入我们</el-menu-item>
+            </el-submenu>
           </el-menu>
         </el-col>
       </el-row>

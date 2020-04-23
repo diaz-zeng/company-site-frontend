@@ -1,31 +1,43 @@
 <template>
   <div class="custom-software">
     <page-header
-      :src="require('../assets/img/banner-img06.jpg')"
-      title="联系我们"
-      content="为客户提供专业、优质的服务"
+      :src="require('../assets/img/banner-img03-1.jpg')"
+      title="加入我们"
+      content="专业的职业生涯规划、 明确的晋升通道及专业培训， 使您获得快速成长。与伯乐共谋， 与千里马共赢"
     />
     <div class="row-content">
       <el-row :gutter="10" type="flex" justify="space-around">
-        <el-col :span="24">
+        <el-col :span="8">
           <div class="big-icon">
-            <i class="el-icon-phone-outline"></i>
+            <i class="icon el-icon-data-board"></i>
           </div>
           <p class="text-content">
             <b class="b">|</b>
-            韩女士
+            销售
           </p>
           <p style="color:#999;">联系方式：2222222</p>
+        </el-col>
+        <el-col :span="8" class="border">
+          <div class="big-icon">
+            <i class="el-icon-copy-document"></i>
+          </div>
+          <p class="text-content">
+            <b class="b">|</b>
+            Python技术
+          </p>
+          <p style="color:#999;">联系方式：2222222</p>
+        </el-col>
+        <el-col :span="8">
+          <div class="big-icon">
+            <i class="el-icon-upload"></i>
+          </div>
+          <p class="text-content">
+            <b class="b">|</b>
+            RPA技术
+          </p>
           <p style="color:#999;">联系方式：2222222</p>
         </el-col>
       </el-row>
-    </div>
-
-    <div class="map">
-      <div class="map-text">
-        <p class="text-top"><b class="b">|</b> 公司地址</p>
-        <p class="text">上海市闵行区陈行公路2388号浦江科技广场5号楼11层W08</p>
-      </div>
     </div>
   </div>
 </template>
@@ -85,6 +97,7 @@ export default class CustomSoftware extends Vue {
   .big-icon {
     width: 120px;
     height: 120px;
+    margin: 0 calc(50% - 60px);
     border-radius: 50%;
     margin-bottom: 30px;
     i {

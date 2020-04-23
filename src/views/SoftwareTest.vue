@@ -82,8 +82,9 @@
 
     <div class="scope ">
       <p class="title">服务范围</p>
+      <div class="fuwu"></div>
     </div>
-
+    <div class="test"></div>
     <div class="advantages">
       <p class="title">第三方测试的特点与优势</p>
       <el-row :gutter="10" type="flex" justify="space-around">
@@ -165,6 +166,7 @@ export default class SoftwareTest extends Vue {
     text-align: center;
     margin-bottom: 60px;
   }
+
   .service-area {
     padding: 15px 18%;
     width: calc(100% - 36%);
@@ -198,6 +200,15 @@ export default class SoftwareTest extends Vue {
     height: 500px;
     text-align: center;
     color: white;
+  }
+  .test {
+    background: url(../assets/img/test.png) no-repeat;
+    height: 700px;
+  }
+  .fuwu {
+    background: url(../assets/img/fuwufanwei.png) no-repeat;
+    height: 700px;
+    width: 800px;
   }
   .advantages {
     padding: 15px 18%;
