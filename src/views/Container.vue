@@ -99,6 +99,41 @@
             >软件测试及第三方认证测试</el-link
           >
         </el-col>
+
+        <el-col :span="4">
+          <p class="title">行业解决方案</p>
+          <el-link
+            class="link"
+            type="info"
+            :underline="false"
+            href="/solutions/rap"
+            >业务流程自动化</el-link
+          >
+          <el-link
+            class="link"
+            type="info"
+            :underline="false"
+            href="/solutions/internet"
+            >工控设备物联网</el-link
+          >
+        </el-col>
+        <el-col :span="4">
+          <p class="title">软件服务</p>
+          <el-link
+            class="link"
+            type="info"
+            :underline="false"
+            href="/service/cooperation"
+            >联系我们</el-link
+          >
+          <el-link
+            class="link"
+            type="info"
+            :underline="false"
+            href="/service/join"
+            >加入我们</el-link
+          >
+        </el-col>
       </el-row>
     </el-footer>
   </el-container>
