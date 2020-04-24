@@ -33,9 +33,7 @@
             <i class="el-icon-s-platform"></i>
           </div>
           <b>模拟人的操作</b>
-          <p class="text-content">
-            通过模仿人的方式,执行一系列的业务流程 。
-          </p>
+          <p class="text-content">通过模仿人的方式,执行一系列的业务流程 。</p>
         </el-col>
       </el-row>
     </div>
@@ -147,7 +145,7 @@
             <div class="big-icon">
               <i class="el-icon-check" style="color:#0457b7;"></i>
             </div>
-            <p class="text-content">
+            <p>
               <b class="b">|</b>
               资金管理
             </p>
@@ -167,20 +165,14 @@
           <div class="big-icon" style="background-color:#77dce7;">
             <i class="el-icon-medal"></i>
           </div>
-          <b class="text-content">
-            执行规则
-          </b>
-          <p class="text-content">
-            基于事先配置的规则进行匹配执行
-          </p>
+          <b class="text-content">执行规则</b>
+          <p class="text-content">基于事先配置的规则进行匹配执行</p>
         </el-col>
         <el-col :span="8">
           <div class="big-icon" style="background-color:#59afff;">
             <i class="el-icon-receiving"></i>
           </div>
-          <b class="text-content">
-            数据抓取
-          </b>
+          <b class="text-content">数据抓取</b>
           <p class="text-content">
             模拟键盘鼠标操作，从各类系统界面，包括网页中抓取数据，过滤数据
           </p>
@@ -189,23 +181,15 @@
           <div class="big-icon" style="background-color:#f2764b;">
             <i class="el-icon-notebook-2"></i>
           </div>
-          <b class="text-content">
-            审计日志
-          </b>
-          <p class="text-content">
-            日志自动审查过滤与抽取
-          </p>
+          <b class="text-content">审计日志</b>
+          <p class="text-content">日志自动审查过滤与抽取</p>
         </el-col>
         <el-col :span="8">
           <div class="big-icon" style="background-color:#597cff;">
             <i class="el-icon-document-add"></i>
           </div>
-          <b class="text-content">
-            数据输入
-          </b>
-          <p class="text-content">
-            跨系统自动输入，同步各类数据、内容
-          </p>
+          <b class="text-content">数据输入</b>
+          <p class="text-content">跨系统自动输入，同步各类数据、内容</p>
         </el-col>
       </el-row>
       <el-row :gutter="10" type="flex" justify="space-around">
@@ -213,9 +197,7 @@
           <div class="big-icon" style="background-color:#fdbf3a;">
             <i class="el-icon-printer"></i>
           </div>
-          <b class="text-content">
-            OCR识别
-          </b>
+          <b class="text-content">OCR识别</b>
           <p class="text-content">
             对文档、扫描件，利用多种光学字符识别工具进行扫描取值
           </p>
@@ -224,31 +206,21 @@
           <div class="big-icon" style="background-color:#77dce7;">
             <i class="el-icon-folder-opened"></i>
           </div>
-          <b class="text-content">
-            文件处理
-          </b>
-          <p class="text-content">
-            依照预先制定的桂萼，自动触发文件处理流程
-          </p>
+          <b class="text-content">文件处理</b>
+          <p class="text-content">依照预先制定的桂萼，自动触发文件处理流程</p>
         </el-col>
         <el-col :span="8">
           <div class="big-icon" style="background-color:#5fdb7e;">
             <i class="el-icon-c-scale-to-original"></i>
           </div>
-          <b class="text-content">
-            流程执行
-          </b>
-          <p class="text-content">
-            既定条件下触发自动化流程
-          </p>
+          <b class="text-content">流程执行</b>
+          <p class="text-content">既定条件下触发自动化流程</p>
         </el-col>
         <el-col :span="8">
           <div class="big-icon" style="background-color:rgb(253, 91, 38);">
             <i class="el-icon-view"></i>
           </div>
-          <b class="text-content">
-            聊天与问答
-          </b>
+          <b class="text-content">聊天与问答</b>
           <p class="text-content">
             称为用户的个人助理，回答经常需要重复回答的问题
           </p>
@@ -322,11 +294,14 @@ export default class CustomSoftware extends Vue {
       text-align: center;
       color: white;
     }
-    .text-content {
-      width: 100%;
-      font-size: 16px;
-      text-align: center;
-    }
+  }
+  .text-content {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
+  b.text-content {
+    display: block;
   }
   .b {
     color: #0457b7;

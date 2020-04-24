@@ -48,7 +48,7 @@ export default class Briefing extends Vue {
     height: initial;
     display: flex;
     .text {
-      width: 66%;
+      width: 70%;
       display: inline-block;
       margin-right: 1%;
       .section {
@@ -59,11 +59,12 @@ export default class Briefing extends Vue {
       }
     }
     .img {
-      height: inherit;
-      width: 33%;
+      height: initial;
+      width: 30%;
       justify-content: center;
       display: inline-flex;
-      align-items: center;
+      align-items: flex-start;
+      padding-top: 30px;
     }
   }
 }
