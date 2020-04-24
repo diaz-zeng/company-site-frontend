@@ -60,7 +60,7 @@
     <div class="advantages">
       <p class="title">我们的优势</p>
       <el-row :gutter="10" type="flex" justify="space-around">
-        <el-col :span="8">
+        <el-col :span="8" class="border">
           <div class="big-icon" style="background-color:#77dce7;">
             <i class="el-icon-medal"></i>
           </div>
@@ -68,7 +68,7 @@
             我们的技术服务队伍均具备丰富的大型项目成功实施经验，使我们为您提供的解决方案有很高的专业水准。
           </p>
         </el-col>
-        <el-col :span="8">
+        <el-col :span="8" class="border">
           <div class="big-icon" style="background-color:#59afff;">
             <i class="el-icon-copy-document"></i>
           </div>
@@ -76,7 +76,7 @@
             在我们覆盖的行业及应用中，我们具备成熟的解决方案或第三方解决方案集成和实施服务能力。
           </p>
         </el-col>
-        <el-col :span="8">
+        <el-col :span="8" class="border">
           <div class="big-icon" style="background-color:#f2764b;">
             <i class="el-icon-discover"></i>
           </div>
@@ -86,7 +86,7 @@
         </el-col>
       </el-row>
       <el-row :gutter="10" type="flex" justify="space-around">
-        <el-col :span="8">
+        <el-col :span="8" class="border">
           <div class="big-icon" style="background-color:#597cff;">
             <i class="el-icon-user"></i>
           </div>
@@ -94,7 +94,7 @@
             从客户利益出发把产品做好做精，为用户提供操作简单、功能强大、内容丰富的软件产品，客户使用我们开发的产品质量放心、商业机密安心、售后服务舒心。
           </p>
         </el-col>
-        <el-col :span="8">
+        <el-col :span="8" class="border">
           <div class="big-icon" style="background-color:#fdbf3a;">
             <i class="el-icon-trophy"></i>
           </div>
@@ -102,7 +102,7 @@
             我们拥有经验丰富的工程师团队为客户提供从咨询、需求分析、设计、开发、测试、实施、培训、维护到跟踪支持等一条龙服务。
           </p>
         </el-col>
-        <el-col :span="8">
+        <el-col :span="8" class="border">
           <div class="big-icon" style="background-color:#5fdb7e;">
             <i class="el-icon-circle-check"></i>
           </div>
@@ -180,12 +180,12 @@ export default class CustomSoftware extends Vue {
         color: white;
       }
     }
-    .text-content {
-      width: 100%;
-      font-size: 16px;
-      line-height: 34px;
-      text-align: center;
-    }
+  }
+  .text-content {
+    width: 95%;
+    font-size: 16px;
+    line-height: 34px;
+    text-align: center;
   }
 }
 </style>

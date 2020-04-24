@@ -12,7 +12,7 @@
           <div class="big-icon" style="background-color:#77dce7;">
             <i class="el-icon-rank"></i>
           </div>
-          <b>软件机器人</b>
+          <b class="text-content">软件机器人</b>
           <p class="text-content">
             RPA是基于计算机操作系统的工作桌面，自动识别
             UI、完成预先设定的工作流程的软件机器人。
@@ -22,7 +22,7 @@
           <div class="big-icon" style="background-color:#59afff;">
             <i class="el-icon-finished"></i>
           </div>
-          <b>全自动</b>
+          <b class="text-content">全自动</b>
           <p class="text-content">
             自动操作整个业务流程。用软件的方式代替人力，
             完成大量重复性的手工操作。
@@ -32,7 +32,7 @@
           <div class="big-icon" style="background-color:#f2764b;">
             <i class="el-icon-s-platform"></i>
           </div>
-          <b>模拟人的操作</b>
+          <b class="text-content">模拟人的操作</b>
           <p class="text-content">通过模仿人的方式,执行一系列的业务流程 。</p>
         </el-col>
       </el-row>
@@ -145,11 +145,11 @@
             <div class="big-icon">
               <i class="el-icon-check" style="color:#0457b7;"></i>
             </div>
-            <p>
+            <p class="text-content">
               <b class="b">|</b>
               资金管理
             </p>
-            <ol style="color:#999;">
+            <ol style="color:#999; ">
               <li>资金管理</li>
               <li>对外收付款</li>
               <li>银行对账</li>

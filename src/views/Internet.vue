@@ -5,7 +5,11 @@
       title="工控设备物联网"
       content="数据采集 · 远程监控 · 资产管理 · 数据分析"
     />
-    <briefing title="业务介绍" :content="content" />
+    <briefing
+      title="业务介绍"
+      :content="content"
+      :src="require('../assets/img/proposal5.png')"
+    />
     <div class="advantages">
       <p class="title">产品特性</p>
       <el-row :gutter="10" type="flex" justify="space-around">
@@ -13,7 +17,7 @@
           <div class="big-icon" style="background-color:#77dce7;">
             <i class="el-icon-coordinate"></i>
           </div>
-          <b>多协议</b>
+          <b class="text-content">多协议</b>
           <p class="text-content">
             兼容主流PLC、HMI、仪器仪表 等通讯协议
           </p>
@@ -22,7 +26,7 @@
           <div class="big-icon" style="background-color:#59afff;">
             <i class="el-icon-monitor"></i>
           </div>
-          <b>远程诊断 </b>
+          <b class="text-content">远程诊断 </b>
           <p class="text-content">
             支持对主流PLC、HMI等网络设备进行远程上下载程序、远程调试
           </p>
@@ -33,7 +37,7 @@
           <div class="big-icon" style="background-color:#597cff;">
             <i class="el-icon-mobile"></i>
           </div>
-          <b>边缘计算</b>
+          <b class="text-content">边缘计算</b>
           <p class="text-content">
             数据按需发送，且经过严格的数据压缩，极大的降低了数据流量，提高了刷新效率
           </p>
@@ -42,7 +46,7 @@
           <div class="big-icon" style="background-color:#fdbf3a;">
             <i class="el-icon-bell"></i>
           </div>
-          <b>数据安全 </b>
+          <b class="text-content">数据安全 </b>
           <p class="text-content">
             硬件密钥身份识别、P2P远程安全通讯、RSA数据加密
           </p>
@@ -51,7 +55,7 @@
           <div class="big-icon" style="background-color:#5fdb7e;">
             <i class="el-icon-star-off"></i>
           </div>
-          <b>数据开放</b>
+          <b class="text-content">数据开放</b>
           <p class="text-content">
             支持通过MQTT协议对接第三方平台
           </p>
@@ -60,7 +64,7 @@
     </div>
     <div class="row-content">
       <el-row :gutter="10" type="flex" justify="space-around">
-        <el-col :span="8">
+        <el-col :span="8" class="border">
           <div class="big-icon">
             <i class="el-icon-edit"></i>
           </div>
@@ -86,7 +90,7 @@
         </el-col>
       </el-row>
       <el-row :gutter="10" type="flex" justify="space-around">
-        <el-col :span="8">
+        <el-col :span="8" class="border">
           <div class="big-icon">
             <i class="el-icon-setting"></i>
           </div>
@@ -114,19 +118,33 @@
     </div>
     <div>
       <div>
-        <el-row>
-          <el-col>智能网关 </el-col>
-          <el-col
-            >智能网关是作为连接设备入网的边缘计算网关，是物联网平台中的远程通讯设备，用于实现自动化设备的数据采集、远程PLC程序下载及故障诊断等。
+        <el-row :gutter="10" type="flex" justify="space-around">
+          <el-col :span="8" class="border">
+            <div class="img">
+              <img src="../assets/img/img-affairs03.jpg" />
+            </div>
+          </el-col>
+          <el-col>
+            <div class="wenben">
+              <b class="b">|</b>
+              智能网关是作为连接设备入网的边缘计算网关，是物联网平台中的远程通讯设备，用于实现自动化设备的数据采集、远程PLC程序下载及故障诊断等。
+            </div>
           </el-col>
         </el-row>
       </div>
 
       <div>
-        <el-row>
-          <el-col>智能网关 </el-col>
-          <el-col
-            >智能网关是作为连接设备入网的边缘计算网关，是物联网平台中的远程通讯设备，用于实现自动化设备的数据采集、远程PLC程序下载及故障诊断等。
+        <el-row :gutter="10" type="flex" justify="space-around">
+          <el-col :span="8" class="border">
+            <div class="img">
+              <img src="../assets/img/img-affairs02.jpg" />
+            </div>
+          </el-col>
+          <el-col>
+            <div class="wenben">
+              <b class="b">|</b>
+              SaaS云平台是一个以设备数据采集、企业业务集成为目标，实现设备管理、运维，在线诊断等多维度、多元数据的融合应用，提供设备监控，数据建模，数据分析、数字化业务集成，组态应用开发和分析服务，以集成化、数字化、智能化赋能于企业数字化的智慧平台
+            </div>
           </el-col>
         </el-row>
       </div>
@@ -152,6 +170,18 @@ export default class CustomSoftware extends Vue {
     font-size: 36px;
     text-align: center;
     margin-bottom: 60px;
+  }
+  .img img {
+    margin-top: 50px;
+    padding-left: 240px;
+  }
+  .wenben {
+    margin-top: 50px;
+    padding-left: 290px;
+    font-size: 20px;
+    width: 400px;
+    padding-right: 10px;
+    color: #999;
   }
   .service-area {
     padding: @content-area-padding;
@@ -183,6 +213,7 @@ export default class CustomSoftware extends Vue {
     padding-bottom: 15px;
     width: @content-area-width;
     margin-bottom: 60px;
+
     .big-icon {
       width: 120px;
       height: 120px;
@@ -235,6 +266,14 @@ export default class CustomSoftware extends Vue {
   }
   .b {
     color: #0457b7;
+  }
+  .text-content {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
+  b.text-content {
+    display: block;
   }
 }
 </style>
