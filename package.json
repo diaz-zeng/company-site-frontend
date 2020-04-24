@@ -10,8 +10,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue,ts}": [
+      "eslint --fix"
+    ]
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -40,6 +45,7 @@
     "husky": "^4.2.5",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
+    "lint-staged": "^10.1.7",
     "prettier": "^1.19.1",
     "typescript": "~3.8.3",
     "vue-cli-plugin-element": "^1.0.1",
