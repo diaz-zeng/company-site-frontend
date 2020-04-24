@@ -104,7 +104,7 @@ const routes: Array<RouteConfig> = [
         name: "sys",
         component: Sys,
         meta: {
-          title: "RPA业务流程自动化"
+          title: "流程行业系统集成"
         }
       }
     ]

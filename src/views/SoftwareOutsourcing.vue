@@ -17,7 +17,7 @@
           <el-col :span="8">
             <div class="big-icon">
               <i
-                class="icon el-icon-data-board"
+                class="el-icon-suitcase"
                 style="color:#0457b7;  font-size: 70px; text-align: left;"
               ></i>
             </div>
@@ -32,7 +32,7 @@
           <el-col :span="8" class="border">
             <div class="big-icon">
               <i
-                class="el-icon-copy-document"
+                class="el-icon-takeaway-box"
                 style="color:#0457b7;font-size: 70px; text-align: left;"
               ></i>
             </div>
@@ -47,7 +47,7 @@
           <el-col :span="8">
             <div class="big-icon">
               <i
-                class="el-icon-discover"
+                class="el-icon-data-analysis"
                 style="color:#0457b7; font-size: 70px;text-align: left;"
               ></i>
             </div>
