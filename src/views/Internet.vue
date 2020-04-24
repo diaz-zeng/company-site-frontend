@@ -116,7 +116,7 @@
         </el-col>
       </el-row>
     </div>
-    <div>
+    <div class="kuan">
       <div>
         <el-row :gutter="10" type="flex" justify="space-around">
           <el-col :span="8" class="border">
@@ -171,13 +171,16 @@ export default class CustomSoftware extends Vue {
     text-align: center;
     margin-bottom: 60px;
   }
+  .kuan {
+    width: 80%;
+  }
   .img img {
     margin-top: 50px;
     padding-left: 240px;
   }
   .wenben {
     margin-top: 50px;
-    padding-left: 290px;
+    padding-left: 340px;
     font-size: 20px;
     width: 400px;
     padding-right: 10px;

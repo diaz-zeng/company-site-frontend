@@ -20,6 +20,8 @@ const Internet = () =>
 const Cooperation = () =>
   import(/* webpackChunkName: "Cooperation" */ "../views/Cooperation.vue");
 const Join = () => import(/* webpackChunkName: "Join" */ "../views/Join.vue");
+const Sys = () =>
+  import(/* webpackChunkName: "Solutions" */ "../views/Sys.vue");
 const routes: Array<RouteConfig> = [
   {
     path: "/",
@@ -95,6 +97,14 @@ const routes: Array<RouteConfig> = [
         component: Join,
         meta: {
           title: "加入我们"
+        }
+      },
+      {
+        path: "solutions/sys",
+        name: "sys",
+        component: Sys,
+        meta: {
+          title: "RPA业务流程自动化"
         }
       }
     ]

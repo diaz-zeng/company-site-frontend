@@ -4,7 +4,7 @@
       :src="require('../assets/img/banner-img03-3.jpg')"
       title="RPA业务流程自动化"
       content="RPA · AI · BPM"
-    />、
+    />
     <div class="advantages">
       <p class="title">什么是RPA</p>
       <el-row :gutter="10" type="flex" justify="space-around">

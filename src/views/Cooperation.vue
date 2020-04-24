@@ -15,8 +15,8 @@
             <b class="b">|</b>
             韩女士
           </p>
-          <p style="color:#999;">联系方式：2222222</p>
-          <p style="color:#999;">联系方式：2222222</p>
+          <p style="color:#999;">电话：021-64026685</p>
+          <p style="color:#999;">邮箱：dataplus@863soft.com</p>
         </el-col>
       </el-row>
     </div>
