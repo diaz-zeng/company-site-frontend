@@ -22,15 +22,15 @@
           <p class="font">电子政务</p>
         </el-col>
         <el-col :span="4" class="item">
-          <i class="icon el-icon-s-data" />
+          <i class="icon el-icon-c-scale-to-original" />
           <p class="font">电子商务</p>
         </el-col>
         <el-col :span="4" class="item">
-          <i class="icon el-icon-office-building" />
+          <i class="icon el-icon-shopping-bag-1" />
           <p class="font">互联网药品行业</p>
         </el-col>
         <el-col :span="4" class="item">
-          <i class="icon el-icon-fork-spoon" />
+          <i class="icon el-icon-mobile-phone" />
           <p class="font">通信</p>
         </el-col>
       </el-row>
@@ -40,15 +40,15 @@
           <p class="font">移动APP</p>
         </el-col>
         <el-col :span="4" class="item">
-          <i class="icon el-icon-collection" />
+          <i class="icon el-icon-link" />
           <p class="font">网站</p>
         </el-col>
         <el-col :span="4" class="item">
-          <i class="icon el-icon-first-aid-kit" />
+          <i class="icon el-icon-smoking" />
           <p class="font">烟草</p>
         </el-col>
         <el-col :span="4" class="item">
-          <i class="icon el-icon-truck" />
+          <i class="icon el-icon-refresh" />
           <p class="font">环保</p>
         </el-col>
         <el-col :span="4" class="item">
@@ -58,23 +58,23 @@
       </el-row>
       <el-row type="flex" justify="space-around">
         <el-col :span="4" class="item">
-          <i class="icon el-icon-data-board" />
+          <i class="icon el-icon-connection" />
           <p class="font">电力</p>
         </el-col>
         <el-col :span="4" class="item">
-          <i class="icon el-icon-collection" />
+          <i class="icon el-icon-crop" />
           <p class="font">广电</p>
         </el-col>
         <el-col :span="4" class="item">
-          <i class="icon el-icon-first-aid-kit" />
+          <i class="icon el-icon-fork-spoon" />
           <p class="font">餐饮</p>
         </el-col>
         <el-col :span="4" class="item">
-          <i class="icon el-icon-truck" />
+          <i class="icon el-icon-set-up" />
           <p class="font">通用ERP</p>
         </el-col>
         <el-col :span="4" class="item">
-          <i class="icon el-icon-money" />
+          <i class="icon el-icon-turn-off" />
           <p class="font">其他</p>
         </el-col>
       </el-row>
