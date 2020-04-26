@@ -10,7 +10,7 @@
         <el-image
           class="image"
           fit="none"
-          :src="require(`../assets/img/banner-img02-${item}.jpg`)"
+          :src="require(`../assets/img/banner-index-${item}.jpg`)"
         ></el-image>
       </el-carousel-item>
     </el-carousel>
