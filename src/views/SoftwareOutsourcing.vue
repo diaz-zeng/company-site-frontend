@@ -176,7 +176,7 @@ export default class SoftwareOutsourcing extends Vue {
 @import "../less/variables.less";
 .software-outsourcing {
   .title {
-    line-height: 48px;
+    line-height: 100px;
     font-size: 36px;
     text-align: center;
     margin-bottom: 60px;
@@ -184,7 +184,7 @@ export default class SoftwareOutsourcing extends Vue {
   .service-area {
     padding: @content-area-padding;
     width: @content-area-width;
-    height: 450px;
+    height: 490px;
     background-color: #f3f3f3;
     b.text-content {
       display: block;

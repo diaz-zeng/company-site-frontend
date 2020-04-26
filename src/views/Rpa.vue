@@ -241,16 +241,18 @@ export default class CustomSoftware extends Vue {
 <style lang="less" scoped>
 @import "../less/variables.less";
 .custom-software {
+  ol {
+    padding-inline-start: 70px;
+  }
   .title {
-    line-height: 48px;
+    line-height: 120px;
     font-size: 36px;
     text-align: center;
-    margin-bottom: 60px;
   }
   .service-area {
     padding: @content-area-padding;
     width: @content-area-width;
-    height: 700px;
+    height: 800px;
     background-color: #f3f3f3;
 
     .item {
@@ -265,11 +267,11 @@ export default class CustomSoftware extends Vue {
         display: block;
         font-size: 72px;
         width: 100%;
-        text-align: center;
+        text-align: left;
       }
       .font {
         width: 100%;
-        text-align: center;
+        text-align: left;
         font-size: 16px;
       }
     }

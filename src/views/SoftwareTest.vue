@@ -170,7 +170,7 @@ export default class SoftwareTest extends Vue {
   .service-area {
     padding: 15px 18%;
     width: calc(100% - 36%);
-    height: 500px;
+    height: 460px;
     background-color: #f3f3f3;
 
     .item {
@@ -180,7 +180,7 @@ export default class SoftwareTest extends Vue {
       }
       .icon {
         display: block;
-        font-size: 72px;
+        font-size: 40px;
         width: 100%;
         text-align: center;
       }
@@ -214,7 +214,6 @@ export default class SoftwareTest extends Vue {
     padding: 15px 18%;
     width: calc(100% - 36%);
     margin-bottom: 60px;
-    background-color: #f3f3f3;
     .big-icon {
       width: 120px;
       height: 120px;

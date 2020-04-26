@@ -173,6 +173,7 @@ export default class CustomSoftware extends Vue {
   }
   .kuan {
     width: 80%;
+    padding-bottom: 50px;
   }
   .img img {
     margin-top: 50px;
@@ -241,9 +242,6 @@ export default class CustomSoftware extends Vue {
   .row-content {
     padding: 40px 150px 30px 150px;
     border-right: 1px solid #eee;
-    border-left: 1px solid #eee;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #ededed;
   }
   .big-icon {
     width: 30px;

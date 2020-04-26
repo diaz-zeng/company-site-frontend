@@ -131,7 +131,7 @@ export default class CustomSoftware extends Vue {
 @import "../less/variables.less";
 .custom-software {
   .title {
-    line-height: 48px;
+    line-height: 100px;
     font-size: 36px;
     text-align: center;
     margin-bottom: 60px;
@@ -139,7 +139,7 @@ export default class CustomSoftware extends Vue {
   .service-area {
     padding: @content-area-padding;
     width: @content-area-width;
-    height: 300px;
+    height: 360px;
     background-color: #f3f3f3;
 
     .item {
