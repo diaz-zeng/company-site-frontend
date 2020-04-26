@@ -9,7 +9,7 @@
       <el-row :gutter="10" type="flex" justify="space-around">
         <el-col :span="8" class="border">
           <div class="big-icon">
-            <img src="../assets/img/用户3.png" />
+            <img src="../assets/img/user3.png" />
           </div>
           <b class="text-content">
             <b class="b">|</b>
@@ -53,7 +53,7 @@
       <el-row :gutter="10" type="flex" justify="space-around">
         <el-col :span="8" class="border">
           <div class="big-icon">
-            <img src="../assets/img/用户2.png" />
+            <img src="../assets/img/user2.png" />
           </div>
           <b class="text-content">
             <b class="b">|</b>
@@ -99,7 +99,7 @@
       <el-row :gutter="10" type="flex" justify="space-around">
         <el-col :span="8" class="border">
           <div class="big-icon">
-            <img src="../assets/img/用户.png" />
+            <img src="../assets/img/user.png" />
           </div>
           <b class="text-content">
             <b class="b">|</b>
