@@ -242,7 +242,7 @@ export default class CustomSoftware extends Vue {
 @import "../less/variables.less";
 .custom-software {
   ol {
-    padding-inline-start: 70px;
+    width: 130px;
     padding-left: 80px;
   }
   .title {
