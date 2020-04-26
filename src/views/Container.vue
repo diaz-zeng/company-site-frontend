@@ -164,6 +164,11 @@ export default class Container extends Vue {
 // * {
 //   font-family: "Meiryo UI Bold Italic", "Meiryo UI Regular", "Meiryo UI" !important;
 // }
+.el-menu.el-menu--horizontal {
+  border-bottom: solid 1px #e6e6e6;
+  width: 600px;
+  left: 100px;
+}
 body {
   margin: 0 !important;
 }
@@ -174,7 +179,7 @@ body {
   .header {
     margin-bottom: 20px;
     .header-rows {
-      margin: 10px 18%;
+      margin: 10px 10%;
       // font-weight: bold !important;
       .title {
         font-size: @header-font-size !important;
@@ -185,7 +190,8 @@ body {
           :hover {
             cursor: pointer;
           }
-          margin-right: 15px;
+          margin-right: -20px;
+          left: 60px;
         }
       }
     }
