@@ -139,7 +139,7 @@ export default class CustomSoftware extends Vue {
   .service-area {
     padding: @content-area-padding;
     width: @content-area-width;
-    height: 450px;
+    height: 300px;
     background-color: #f3f3f3;
 
     .item {
@@ -149,7 +149,7 @@ export default class CustomSoftware extends Vue {
       }
       .icon {
         display: block;
-        font-size: 72px;
+        font-size: 36px;
         width: 100%;
         text-align: center;
       }

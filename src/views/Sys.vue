@@ -43,7 +43,7 @@
             <div class="big-icon">
               <i class="el-icon-mobile" style="color:#0457b7;"></i>
             </div>
-            <p class="el-icon-document-remove">
+            <p class="text-content">
               <b class="b">|</b>
               信息滞后
             </p>
@@ -186,7 +186,6 @@ export default class CustomSoftware extends Vue {
     padding: @content-area-padding;
     width: @content-area-width;
     height: 500px;
-    background-color: #f3f3f3;
 
     .item {
       .icon,
