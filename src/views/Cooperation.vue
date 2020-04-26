@@ -26,7 +26,7 @@
 
     <div class="map">
       <div class="map-text">
-        <p class="text-top"><b class="b">|</b> 公司地址</p>
+        <p class="text-top"><b style="color: #0457b7;">|</b> 公司地址</p>
         <p class="text">上海市闵行区陈行公路2388号浦江科技广场5号楼11层W08</p>
       </div>
     </div>
@@ -56,11 +56,10 @@ export default class CustomSoftware extends Vue {
       background-color: white;
       position: absolute;
       padding: 0 10px;
-      width: 30%;
-      height: 30%;
+      width: 40%;
+      height: 35%;
       top: 20%;
       right: 30%;
-      border: 1px solid #777777;
       // height: 150px;
       // width: 250px;
       // margin-top: 50px;

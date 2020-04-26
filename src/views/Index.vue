@@ -23,7 +23,7 @@
         <el-col :span="6">
           <div class="icon-item">
             <div class="item-title">
-              <i class="el-icon-connection icon"></i>
+              <i class="el-icon-suitcase-1 icon"></i>
               <div class="title-content">
                 <p class="title">软件外包服务</p>
                 <p class="sub-title">Software outsourcing</p>
@@ -37,7 +37,7 @@
         <el-col :span="6">
           <div class="icon-item">
             <div class="item-title">
-              <i class="el-icon-magic-stick icon"></i>
+              <i class="el-icon-mouse icon"></i>
               <div class="title-content">
                 <p class="title">定制开发</p>
                 <p class="sub-title">Custom software</p>
@@ -51,7 +51,7 @@
         <el-col :span="6">
           <div class="icon-item">
             <div class="item-title">
-              <i class="el-icon-monitor icon"></i>
+              <i class="el-icon-odometer icon"></i>
               <div class="title-content">
                 <p class="title">软件测试服务</p>
                 <p class="sub-title">Software test</p>
@@ -65,7 +65,7 @@
         <el-col :span="6">
           <div class="icon-item">
             <div class="item-title">
-              <i class="el-icon-position icon"></i>
+              <i class="el-icon-cpu icon"></i>
               <div class="title-content">
                 <p class="title">软件实训</p>
                 <p class="sub-title">Software training</p>
@@ -128,6 +128,61 @@
         </el-col>
       </el-row>
     </div>
+    <div class="row">
+      <p class="title">专业、可靠的合作伙伴</p>
+      <el-row type="flex" justify="space-around">
+        <el-col :span="4" class="item">
+          <img src="../assets/img/img-hb01.jpg" />
+        </el-col>
+        <el-col :span="4" class="item">
+          <img src="../assets/img/img-hb02.jpg" />
+        </el-col>
+        <el-col :span="4" class="item">
+          <img src="../assets/img/img-hb03.jpg" />
+        </el-col>
+        <el-col :span="4" class="item">
+          <img src="../assets/img/img-hb04.jpg" />
+        </el-col>
+        <el-col :span="4" class="item">
+          <img src="../assets/img/img-hb05.jpg" />
+        </el-col>
+        <el-col :span="4" class="item">
+          <img src="../assets/img/img-hb06.jpg" />
+        </el-col>
+        <el-col :span="4" class="item">
+          <img src="../assets/img/img-hb07.jpg" />
+        </el-col>
+        <el-col :span="4" class="item">
+          <img src="../assets/img/img-hb08.jpg" />
+        </el-col>
+      </el-row>
+      <el-row type="flex" justify="space-around">
+        <el-col :span="4" class="item">
+          <img src="../assets/img/img-hb09.jpg" />
+        </el-col>
+        <el-col :span="4" class="item">
+          <img src="../assets/img/img-hb10.jpg" />
+        </el-col>
+        <el-col :span="4" class="item">
+          <img src="../assets/img/img-hb11.jpg" />
+        </el-col>
+        <el-col :span="4" class="item">
+          <img src="../assets/img/img-hb12.jpg" />
+        </el-col>
+        <el-col :span="4" class="item">
+          <img src="../assets/img/img-hb13.jpg" />
+        </el-col>
+        <el-col :span="4" class="item">
+          <img src="../assets/img/img-hb14.jpg" />
+        </el-col>
+        <el-col :span="4" class="item">
+          <img src="../assets/img/img-hb15.jpg" />
+        </el-col>
+        <el-col :span="4" class="item">
+          <img src="../assets/img/img-hb16.jpg" />
+        </el-col>
+      </el-row>
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -146,6 +201,9 @@ export default class Index extends Vue {}
     }
   }
 }
+.row {
+  padding: 40px 150px 30px 150px;
+}
 .title {
   line-height: 48px;
   font-size: 36px;
@@ -158,8 +216,7 @@ export default class Index extends Vue {}
   padding-bottom: 30px;
 }
 .first-section {
-  width: @content-area-width;
-  padding: @content-area-padding;
+  padding: 5%;
   padding-bottom: 15px;
   .icons {
     .icon-item {
@@ -177,7 +234,7 @@ export default class Index extends Vue {}
       }
       .item-title {
         .icon {
-          font-size: 64px;
+          font-size: 50px;
           color: #0457b7;
           display: inline-block;
           width: initial;
