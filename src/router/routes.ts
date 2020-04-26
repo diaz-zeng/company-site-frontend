@@ -17,11 +17,11 @@ const Rpa = () =>
   import(/* webpackChunkName: "Solutions" */ "../views/Rpa.vue");
 const Internet = () =>
   import(/* webpackChunkName: "Solutions" */ "../views/Internet.vue");
+const Sys = () =>
+  import(/* webpackChunkName: "Solutions" */ "../views/Sys.vue");
 const Cooperation = () =>
   import(/* webpackChunkName: "Cooperation" */ "../views/Cooperation.vue");
 const Join = () => import(/* webpackChunkName: "Join" */ "../views/Join.vue");
-const Sys = () =>
-  import(/* webpackChunkName: "Solutions" */ "../views/Sys.vue");
 const routes: Array<RouteConfig> = [
   {
     path: "/",

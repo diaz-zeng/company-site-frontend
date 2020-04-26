@@ -44,7 +44,9 @@
               <el-menu-item index="/solutions/internet"
                 >工控设备物联网</el-menu-item
               >
-              <el-menu-item index="sys">流程行业系统集成</el-menu-item>
+              <el-menu-item index="/solutions/sys"
+                >流程行业系统集成</el-menu-item
+              >
               <!-- <el-submenu index="3-4">
                 <template slot="title">智慧产业</template>
                 <el-menu-item index="3-4-1">智慧校园（中小学）</el-menu-item>
