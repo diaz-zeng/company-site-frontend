@@ -109,7 +109,7 @@
             class="link"
             type="info"
             :underline="false"
-            href="/solutions/rap"
+            href="/solutions/rpa"
             >业务流程自动化</el-link
           >
           <el-link
