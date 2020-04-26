@@ -8,15 +8,18 @@
     <div class="row-content">
       <el-row :gutter="10" type="flex" justify="space-around">
         <el-col :span="24">
-          <div class="big-icon">
-            <i class="el-icon-phone-outline"></i>
-          </div>
-          <p class="text-content">
+          <p class="title">
             <b class="b">|</b>
             韩女士
           </p>
-          <p style="color:#999;">电话：021-64026685</p>
-          <p style="color:#999;">邮箱：dataplus@863soft.com</p>
+          <p class="content">
+            电话：021-64026685
+            <i class="el-icon-phone"></i>
+          </p>
+          <p class="content">
+            邮箱：dataplus@863soft.com
+            <i class="el-icon-message"></i>
+          </p>
         </el-col>
       </el-row>
     </div>
@@ -39,32 +42,36 @@ export default class CustomSoftware extends Vue {
 }
 </script>
 <style lang="less" scoped>
+@import "../less/variables.less";
 .custom-software {
   .map {
-    padding: 13px 18%;
-    margin-bottom: 60px;
-    background: url(../assets/img/map.png) no-repeat;
+    margin: @content-area-padding;
+    // margin-bottom: 60px;
+    // margin-top: 50px;
+    // margin-left: 10%;
+    background-image: url(../assets/img/map.png);
     height: 400px;
-    margin-top: 50px;
-    margin-left: 10%;
-    width: 600px;
+    position: relative;
+    .map-text {
+      background-color: white;
+      position: absolute;
+      padding: 0 10px;
+      width: 30%;
+      height: 30%;
+      top: 20%;
+      right: 30%;
+      border: 1px solid #777777;
+      // height: 150px;
+      // width: 250px;
+      // margin-top: 50px;
+      .text-top {
+        display: block;
+        font-size: 20px;
+        text-align: left;
+      }
+    }
   }
-  .map-text {
-    padding: 3px 8%;
-    margin-bottom: 60px;
-    background-color: white;
-    height: 150px;
-    width: 250px;
-    margin-top: 50px;
-  }
-  .text-top {
-    display: block;
-    font-size: 20px;
-    text-align: left;
-  }
-  .b {
-    color: #0457b7;
-  }
+
   .text {
     display: block;
     font-size: 15px;
@@ -75,11 +82,29 @@ export default class CustomSoftware extends Vue {
     border-left: 1px solid #eee;
   }
   .row-content {
-    padding: 40px 150px 30px 150px;
+    padding: @content-area-padding;
     border-right: 1px solid #eee;
     border-left: 1px solid #eee;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #ededed;
+    .title {
+      width: 100%;
+      font-size: 24px;
+      text-align: left;
+      .b {
+        color: #0457b7;
+        font-size: 36px;
+      }
+    }
+    .content {
+      text-indent: 1em;
+      color: #999;
+      font-size: 16px;
+      line-height: 24px;
+      i {
+        color: #0457b7 !important;
+      }
+    }
   }
 
   .big-icon {
@@ -93,11 +118,6 @@ export default class CustomSoftware extends Vue {
       width: 120px;
       text-align: center;
       color: #0457b7;
-    }
-    .text-content {
-      width: 100%;
-      font-size: 16px;
-      text-align: center;
     }
   }
 }

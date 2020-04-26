@@ -13,6 +13,7 @@
         <el-col :span="20">
           <el-menu
             mode="horizontal"
+            menu-trigger="hover"
             text-color="#777777"
             active-text-color="#0457b7"
             router
@@ -53,7 +54,7 @@
                 <el-menu-item index="3-4-2">智慧园区</el-menu-item>
                 <el-menu-item index="3-4-3">智慧水务</el-menu-item>
                 <el-menu-item index="3-4-3">智慧环保</el-menu-item>
-              </el-submenu> -->
+              </el-submenu>-->
             </el-submenu>
             <el-submenu index="4">
               <template slot="title">
@@ -177,9 +178,9 @@ body {
     padding: 0 !important;
   }
   .header {
-    margin-bottom: 20px;
+    margin: 10px 0;
     .header-rows {
-      margin: 10px 10%;
+      margin: @content-area-padding;
       // font-weight: bold !important;
       .title {
         font-size: @header-font-size !important;
@@ -190,9 +191,9 @@ body {
           :hover {
             cursor: pointer;
           }
-          margin-right: -20px;
-          left: -20px;
-          top: -5px;
+          // margin-right: -20px;
+          // left: -20px;
+          // top: -5px;
         }
       }
     }
