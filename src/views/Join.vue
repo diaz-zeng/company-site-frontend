@@ -103,7 +103,7 @@
           </div>
           <b class="text-content">
             <b class="b">|</b>
-            PRA开发、实施工程师
+            RPA开发、实施工程师
           </b>
           <p style="font-weight:bold ">
             技能要求：

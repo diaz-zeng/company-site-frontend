@@ -44,16 +44,14 @@
               <el-menu-item index="/solutions/internet"
                 >工控设备物联网</el-menu-item
               >
-              <el-menu-item index="/solutions/sys"
-                >流程行业系统集成</el-menu-item
-              >
-              <!-- <el-submenu index="3-4">
+              <el-menu-item index="3-3">流程行业系统集成</el-menu-item>
+              <el-submenu index="3-4">
                 <template slot="title">智慧产业</template>
                 <el-menu-item index="3-4-1">智慧校园（中小学）</el-menu-item>
                 <el-menu-item index="3-4-2">智慧园区</el-menu-item>
                 <el-menu-item index="3-4-3">智慧水务</el-menu-item>
                 <el-menu-item index="3-4-3">智慧环保</el-menu-item>
-              </el-submenu> -->
+              </el-submenu>
             </el-submenu>
             <el-submenu index="4">
               <template slot="title">
@@ -117,13 +115,6 @@
             :underline="false"
             href="/solutions/internet"
             >工控设备物联网</el-link
-          >
-          <el-link
-            class="link"
-            type="info"
-            :underline="false"
-            href="/solutions/sys"
-            >流程行业系统集成</el-link
           >
         </el-col>
         <el-col :span="4">
