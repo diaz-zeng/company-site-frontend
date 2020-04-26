@@ -53,8 +53,8 @@ export default class Briefing extends Vue {
       margin-right: 1%;
       .section {
         margin: 20px 0;
-        font-size: @banner-conent-size;
-        line-height: calc(@banner-conent-size * 2);
+        font-size: @banner-content-size;
+        line-height: calc(@banner-content-size * 2);
         text-indent: 2em;
       }
     }
