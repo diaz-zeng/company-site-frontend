@@ -191,7 +191,8 @@ body {
             cursor: pointer;
           }
           margin-right: -20px;
-          left: 60px;
+          left: -20px;
+          top: -5px;
         }
       }
     }
