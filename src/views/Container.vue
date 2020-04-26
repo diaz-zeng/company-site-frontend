@@ -202,6 +202,9 @@ body {
     padding: @content-area-padding;
     padding-top: 15px;
     color: white;
+    .el-col-4 {
+      width: 25%;
+    }
     .title {
       font-size: 16px;
       margin-bottom: 12px;

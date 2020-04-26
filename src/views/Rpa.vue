@@ -243,6 +243,7 @@ export default class CustomSoftware extends Vue {
 .custom-software {
   ol {
     padding-inline-start: 70px;
+    padding-left: 80px;
   }
   .title {
     line-height: 120px;

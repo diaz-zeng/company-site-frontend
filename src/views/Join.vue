@@ -9,12 +9,12 @@
       <el-row :gutter="10" type="flex" justify="space-around">
         <el-col :span="8" class="border">
           <div class="big-icon">
-            <i class="el-icon-user"></i>
+            <img src="../assets/img/用户3.png" />
           </div>
-          <p class="text-content">
+          <b class="text-content">
             <b class="b">|</b>
             大客户销售经理
-          </p>
+          </b>
           <p style="font-weight:bold ">
             技能要求：
           </p>
@@ -53,12 +53,12 @@
       <el-row :gutter="10" type="flex" justify="space-around">
         <el-col :span="8" class="border">
           <div class="big-icon">
-            <i class="el-icon-user"></i>
+            <img src="../assets/img/用户2.png" />
           </div>
-          <p class="text-content">
+          <b class="text-content">
             <b class="b">|</b>
             PRA项目经理
-          </p>
+          </b>
           <p style="font-weight:bold ">
             技能要求：
           </p>
@@ -99,7 +99,7 @@
       <el-row :gutter="10" type="flex" justify="space-around">
         <el-col :span="8" class="border">
           <div class="big-icon">
-            <i class="el-icon-user"></i>
+            <img src="../assets/img/用户.png" />
           </div>
           <b class="text-content">
             <b class="b">|</b>
@@ -181,19 +181,17 @@ export default class CustomSoftware extends Vue {
     text-align: left;
   }
   .border {
-    border-right: 1px solid #eee;
-    border-left: 1px solid #eee;
-    border-top: 1px solid #eee;
+    border-bottom: 1px solid #ededed;
     width: 80%;
   }
   .row-content {
     padding: 40px 150px 30px 150px;
-    border-right: 1px solid #eee;
-    border-left: 1px solid #eee;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #ededed;
   }
-
+  .big-icon img {
+    height: 70px;
+    width: 70px;
+    padding-top: 40px;
+  }
   .big-icon {
     width: 120px;
     height: 120px;
