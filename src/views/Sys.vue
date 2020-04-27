@@ -2,7 +2,7 @@
   <div class="custom-software">
     <page-header
       :src="require('../assets/img/banner-img03-2.jpg')"
-      title="一站式资产管理移动办公平台"
+      title="流程行业系统集成"
       content="平台系统 · 移动办公 · 物联网"
     />
 
