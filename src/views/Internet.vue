@@ -31,6 +31,18 @@
             支持对主流PLC、HMI等网络设备进行远程上下载程序、远程调试
           </p>
         </el-col>
+        <el-col :span="8">
+          <div
+            class="big-icon"
+            style="background-color:rgba(236, 69, 69, 0.85);"
+          >
+            <i class="el-icon-monitor"></i>
+          </div>
+          <b class="text-content">整体感知 </b>
+          <p class="text-content">
+            可以利用射频识别、二维码、智能传感器等感知设备感知获取物体的各类信息
+          </p>
+        </el-col>
       </el-row>
       <el-row :gutter="10" type="flex" justify="space-around">
         <el-col :span="8">
@@ -177,11 +189,11 @@ export default class CustomSoftware extends Vue {
   }
   .img img {
     margin-top: 50px;
-    padding-left: 240px;
+    padding-left: 325px;
   }
   .wenben {
     margin-top: 50px;
-    padding-left: 340px;
+    padding-left: 480px;
     font-size: 20px;
     width: 400px;
     padding-right: 10px;
