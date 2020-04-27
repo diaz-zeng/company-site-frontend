@@ -216,7 +216,7 @@ export default class Index extends Vue {}
   padding-bottom: 30px;
 }
 .first-section {
-  padding: 5%;
+  padding: @content-area-padding;
   padding-bottom: 15px;
   .icons {
     .icon-item {
@@ -234,12 +234,12 @@ export default class Index extends Vue {}
       }
       .item-title {
         .icon {
-          font-size: 50px;
+          font-size: 48px;
           color: #0457b7;
           display: inline-block;
-          width: initial;
-          height: 100%;
           line-height: 100%;
+          margin: 4px auto;
+          margin-right: 10px;
         }
         .title-content {
           display: inline-block;
@@ -252,10 +252,11 @@ export default class Index extends Vue {}
           }
           .title {
             font-size: 18px;
+            line-height: 36px;
           }
           .sub-title {
-            font-size: 18px;
-            line-height: 24px;
+            font-size: 14px;
+            line-height: 18px;
           }
         }
       }
