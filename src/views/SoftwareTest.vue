@@ -204,6 +204,7 @@ export default class SoftwareTest extends Vue {
 }
 </script>
 <style lang="less" scoped>
+@import "../less/variables.less";
 .software-test {
   .title {
     line-height: 48px;
@@ -239,7 +240,6 @@ export default class SoftwareTest extends Vue {
   .scope {
     padding: 15px 18%;
     width: calc(100% - 36%);
-    margin-bottom: 60px;
     background: url(../assets/img/bg-scopen.jpg) no-repeat;
     padding-bottom: 130px;
     height: 500px;
@@ -307,13 +307,18 @@ export default class SoftwareTest extends Vue {
     }
   }
   .test {
-    background: url(../assets/img/test.png) no-repeat;
+    background: url(../assets/img/test.png) no-repeat center center;
+    background-size: auto 100%;
+
     height: 700px;
+    margin: @content-area-padding;
+    margin-bottom: 30px;
   }
   .advantages {
     padding: 15px 18%;
     width: calc(100% - 36%);
-    margin-bottom: 60px;
+    padding-bottom: 60px;
+    background-color: #f3f3f3;
     .big-icon {
       width: 120px;
       height: 120px;
