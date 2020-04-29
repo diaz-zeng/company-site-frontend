@@ -164,6 +164,9 @@ export default class CustomSoftware extends Vue {
 </script>
 <style lang="less" scoped>
 @import "../less/variables.less";
+.el-col-6 {
+  width: 70%;
+}
 .custom-software {
   .title {
     line-height: 48px;
@@ -240,7 +243,6 @@ export default class CustomSoftware extends Vue {
   }
   .row-content {
     padding: @content-area-padding;
-    width: @content-area-width;
     border-right: 1px solid #eee;
   }
   .big-icon {
