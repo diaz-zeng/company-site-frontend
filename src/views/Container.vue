@@ -81,6 +81,9 @@
       <el-row>
         <el-col :span="4">
           <p class="title">关于我们</p>
+          <el-link class="link" type="info" :underline="false" href="/"
+            >首页</el-link
+          >
           <el-link class="link" type="info" :underline="false" href="/about"
             >企业介绍</el-link
           >
