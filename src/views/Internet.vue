@@ -231,6 +231,7 @@ export default class CustomSoftware extends Vue {
     padding-bottom: 15px;
     width: @content-area-width;
     margin-bottom: 60px;
+    background-color: #f3f3f3;
 
     .big-icon {
       width: 120px;
