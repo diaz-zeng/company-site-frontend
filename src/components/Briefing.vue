@@ -1,11 +1,12 @@
+<!--
+ * @Date: 2020-04-29 09:49:20
+ * @LastEditors: 曾令宇
+ * @LastEditTime: 2020-04-29 14:56:34
+ * @FilePath: \company-site-frontend\src\components\Briefing.vue
+ -->
 <template>
   <div class="briefing">
     <p class="title">{{ title }}</p>
-    <!-- <el-row :gutter="50">
-      <el-col :span="16"></el-col>
-      <el-col :span="8" class="img-col">
-      </el-col>
-    </el-row>-->
     <div class="content-area">
       <div class="text">
         <p class="section" v-for="(item, index) in content" :key="index">
@@ -37,6 +38,7 @@ export default class Briefing extends Vue {
 .briefing {
   padding: @content-area-padding;
   width: @content-area-width;
+  margin-bottom: 50px;
   .title {
     width: 100%;
     margin: 50px;

@@ -118,32 +118,36 @@
     </div>
     <div class="kuan">
       <div class="rows">
-        <el-row :gutter="20" type="flex" justify="center">
-          <el-col :span="6" class="border">
+        <el-row :gutter="30" type="flex" justify="space-around">
+          <el-col :span="12" class="border">
             <div class="img">
               <img src="../assets/img/img-affairs03.jpg" />
             </div>
           </el-col>
-          <el-col :span="6">
+          <el-col :span="12">
             <div class="wenben">
-              <b class="b">|</b>
-              智能网关是作为连接设备入网的边缘计算网关，是物联网平台中的远程通讯设备，用于实现自动化设备的数据采集、远程PLC程序下载及故障诊断等。
+              <p>
+                <b class="b">|</b>
+                智能网关是作为连接设备入网的边缘计算网关，是物联网平台中的远程通讯设备，用于实现自动化设备的数据采集、远程PLC程序下载及故障诊断等。
+              </p>
             </div>
           </el-col>
         </el-row>
       </div>
 
       <div class="rows">
-        <el-row :gutter="20" type="flex" justify="center">
-          <el-col :span="6" class="border">
+        <el-row :gutter="30" type="flex" justify="space-around">
+          <el-col :span="12" class="border">
             <div class="img">
               <img src="../assets/img/img-affairs02.jpg" />
             </div>
           </el-col>
-          <el-col :span="6">
+          <el-col :span="12">
             <div class="wenben">
-              <b class="b">|</b>
-              SaaS云平台是一个以设备数据采集、企业业务集成为目标，实现设备管理、运维，在线诊断等多维度、多元数据的融合应用，提供设备监控，数据建模，数据分析、数字化业务集成，组态应用开发和分析服务，以集成化、数字化、智能化赋能于企业数字化的智慧平台
+              <p>
+                <b class="b">|</b>
+                SaaS云平台是一个以设备数据采集、企业业务集成为目标，实现设备管理、运维，在线诊断等多维度、多元数据的融合应用，提供设备监控，数据建模，数据分析、数字化业务集成，组态应用开发和分析服务，以集成化、数字化、智能化赋能于企业数字化的智慧平台
+              </p>
             </div>
           </el-col>
         </el-row>
@@ -164,9 +168,7 @@ export default class CustomSoftware extends Vue {
 </script>
 <style lang="less" scoped>
 @import "../less/variables.less";
-.el-col-6 {
-  width: 70%;
-}
+
 .custom-software {
   .title {
     line-height: 48px;
@@ -183,8 +185,19 @@ export default class CustomSoftware extends Vue {
       .wenben {
         width: 100%;
         font-size: 16px;
+        height: 100%;
         line-height: 24px;
         color: #999;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-flow: column;
+      }
+      .img {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-content: center;
       }
     }
   }
