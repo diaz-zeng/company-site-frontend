@@ -81,52 +81,63 @@
     </div>
 
     <div class="scope">
-      <p class="title">服务范围</p>
-      <div class="tab-view">
-        <div class="tabs">
-          <div
-            class="tab1"
-            :class="tabViewIndex === 0 ? 'active' : ''"
-            @click="tabViewIndex = 0"
-          >
-            <div class="tab-item">
-              <i class="el-icon-trophy icon"></i>
-              <p class="tab-title">软件产品登记测试</p>
+      <el-image
+        class="background-image"
+        :src="require('../assets/img/bg-scopen.jpg')"
+      ></el-image>
+      <div class="content">
+        <p class="title">服务范围</p>
+        <div class="tab-view">
+          <div class="tabs">
+            <div
+              class="tab1"
+              :class="tabViewIndex === 0 ? 'active' : ''"
+              @click="tabViewIndex = 0"
+            >
+              <div class="tab-item">
+                <i class="el-icon-trophy icon"></i>
+                <p class="tab-title">软件产品登记测试</p>
+              </div>
+            </div>
+            <div
+              class="tab2"
+              :class="tabViewIndex === 1 ? 'active' : ''"
+              @click="tabViewIndex = 1"
+            >
+              <div class="tab-item">
+                <i class="el-icon-document-checked icon"></i>
+                <p class="tab-title">科技成果鉴定、评价测试</p>
+              </div>
+            </div>
+            <div
+              class="tab3"
+              :class="tabViewIndex === 2 ? 'active' : ''"
+              @click="tabViewIndex = 2"
+            >
+              <div class="tab-item">
+                <i class="el-icon-reading icon"></i>
+                <p class="tab-title">测试体系咨询和培训</p>
+              </div>
             </div>
           </div>
-          <div
-            class="tab2"
-            :class="tabViewIndex === 1 ? 'active' : ''"
-            @click="tabViewIndex = 1"
-          >
-            <div class="tab-item">
-              <i class="el-icon-document-checked icon"></i>
-              <p class="tab-title">科技成果鉴定、评价测试</p>
-            </div>
+          <div class="tab-content">
+            <p
+              class="content-item"
+              v-for="(item, index) in tabViewContent[tabViewIndex]"
+              :key="index"
+            >
+              {{ item }}
+            </p>
           </div>
-          <div
-            class="tab3"
-            :class="tabViewIndex === 2 ? 'active' : ''"
-            @click="tabViewIndex = 2"
-          >
-            <div class="tab-item">
-              <i class="el-icon-reading icon"></i>
-              <p class="tab-title">测试体系咨询和培训</p>
-            </div>
-          </div>
-        </div>
-        <div class="tab-content">
-          <p
-            class="content-item"
-            v-for="(item, index) in tabViewContent[tabViewIndex]"
-            :key="index"
-          >
-            {{ item }}
-          </p>
         </div>
       </div>
     </div>
-    <div class="test"></div>
+    <div class="test">
+      <el-image
+        class="image"
+        :src="require('../assets/img/test.png')"
+      ></el-image>
+    </div>
     <div class="advantages">
       <p class="title">第三方测试的特点与优势</p>
       <el-row :gutter="10" type="flex" justify="space-around">
@@ -238,81 +249,92 @@ export default class SoftwareTest extends Vue {
     }
   }
   .scope {
-    padding: 15px 18%;
-    width: calc(100% - 36%);
-    background: url(../assets/img/bg-scopen.jpg) no-repeat;
-    padding-bottom: 130px;
-    height: 500px;
+    width: 100%;
+    background: url(../assets/img/bg-scopen.jpg) 100% 100%;
+    height: initial;
     text-align: center;
     color: white;
-    .tab-view {
+    position: relative;
+    .background-image {
       width: 100%;
-      height: calc(100% - 108px);
-      background-color: white;
-      display: flex;
-      .tabs {
-        display: inline-block;
-        width: 25%;
-        height: 100%;
-        // position: absolute;
-        // top: 0;
-        // left: 0;
-        flex: 0.25;
-        .tab1,
-        .tab2,
-        .tab3 {
-          height: calc(100% / 3);
-          width: 100%;
-          cursor: pointer;
-          display: flex;
-          align-content: center;
-          flex-wrap: wrap;
-          .tab-item {
-            display: block;
-            flex: 1;
-            height: initial;
-            .icon {
-              font-size: 32px;
+    }
+    .content {
+      position: absolute;
+      padding: @content-area-padding;
+      width: @content-area-width;
+      top: 0;
+      left: 0;
+      height: 100%;
+      .tab-view {
+        width: 100%;
+        height: calc(100% - 238px);
+        background-color: white;
+        display: flex;
+        .tabs {
+          display: inline-block;
+          width: 25%;
+          height: 100%;
+          // position: absolute;
+          // top: 0;
+          // left: 0;
+          flex: 0.25;
+          .tab1,
+          .tab2,
+          .tab3 {
+            height: calc(100% / 3);
+            width: 100%;
+            cursor: pointer;
+            display: flex;
+            align-content: center;
+            flex-wrap: wrap;
+            .tab-item {
               display: block;
+              flex: 1;
+              height: initial;
+              .icon {
+                font-size: 32px;
+                display: block;
+              }
             }
           }
+          .tab1,
+          .tab3 {
+            background-color: #2f4057;
+          }
+          .tab2 {
+            background-color: #374b65;
+          }
+          .active {
+            background: linear-gradient(to right, #0457b7, #1f99f7);
+          }
         }
-        .tab1,
-        .tab3 {
-          background-color: #2f4057;
-        }
-        .tab2 {
-          background-color: #374b65;
-        }
-        .active {
-          background: linear-gradient(to right, #0457b7, #1f99f7);
-        }
-      }
-      .tab-content {
-        height: 100%;
-        flex: 0.75;
-        display: flex;
-        flex-wrap: wrap;
-        flex-flow: column;
-        justify-content: center;
-        .content-item {
-          font-size: 16px;
-          line-height: 30px;
-          color: #666;
-          text-align: left;
-          text-indent: 2em;
-          padding: 0 30px;
+        .tab-content {
+          height: 100%;
+          flex: 0.75;
+          display: flex;
+          flex-wrap: wrap;
+          flex-flow: column;
+          justify-content: center;
+          .content-item {
+            font-size: 16px;
+            line-height: 30px;
+            color: #666;
+            text-align: left;
+            text-indent: 2em;
+            padding: 0 30px;
+          }
         }
       }
     }
   }
   .test {
-    background: url(../assets/img/test.png) no-repeat center center;
-    background-size: auto 100%;
-
-    height: 700px;
-    margin: @content-area-padding;
+    padding: @content-area-padding;
+    width: @content-area-width;
+    height: initial;
     margin-bottom: 30px;
+    .image {
+      width: 100%;
+    }
   }
   .advantages {
     padding: 15px 18%;

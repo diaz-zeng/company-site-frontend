@@ -12,12 +12,19 @@
         </el-col>
         <el-col :span="20">
           <el-menu
+            ref="menu"
             mode="horizontal"
             menu-trigger="hover"
             text-color="#777777"
             active-text-color="#0457b7"
+            default-active="/"
             router
           >
+            <el-menu-item index="/">
+              <template slot="title">
+                <span class="title">首页</span>
+              </template>
+            </el-menu-item>
             <el-menu-item index="/about">
               <template slot="title">
                 <span class="title">关于我们</span>
@@ -154,6 +161,7 @@ import { Component, Vue } from "vue-property-decorator";
 export default class Container extends Vue {
   gotoIndex(): void {
     if (this.$route.path !== "/") {
+      (this.$refs.menu as any).activeIndex = "/";
       this.$router.push("/");
     }
   }

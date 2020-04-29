@@ -184,8 +184,8 @@ export default class CustomSoftware extends Vue {
     margin-bottom: 60px;
   }
   .kuan {
-    width: 80%;
-    padding-bottom: 50px;
+    width: @content-area-width;
+    padding: @content-area-padding;
   }
   .img img {
     margin-top: 50px;

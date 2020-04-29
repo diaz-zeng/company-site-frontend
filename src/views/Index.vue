@@ -1,8 +1,8 @@
 <template>
   <div class="index">
-    <el-carousel class="swiper" trigger="click" height="420px">
+    <el-carousel class="carousel" trigger="click" :height="`${imgHeight}px`">
       <el-carousel-item
-        class="swiper-item"
+        class="carousel-item"
         v-for="item in 2"
         :key="item"
         arrow="never"
@@ -188,102 +188,112 @@
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
 @Component
-export default class Index extends Vue {}
+export default class Index extends Vue {
+  get imgHeight(): number {
+    const screenHeight: number =
+      document.documentElement.clientHeight || document.body.clientHeight;
+    const result: number = screenHeight * (420 / 1080);
+    console.log(result);
+    return result;
+  }
+}
 </script>
 <style lang="less" scoped>
 @import "../less/variables.less";
 .index {
-  .swiper {
-    .swiper-item {
+  .carousel {
+    .carousel-item {
       .image {
-        height: 420px;
+        height: inherit;
+        width: 100%;
+        background-color: black;
       }
     }
   }
-}
-.row {
-  padding: 40px 150px 30px 150px;
-}
-.title {
-  line-height: 48px;
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 60px;
-}
-.sub-title {
-  text-align: center;
-  color: #606266;
-  padding-bottom: 30px;
-}
-.first-section {
-  padding: @content-area-padding;
-  padding-bottom: 15px;
-  .icons {
-    .icon-item {
-      display: block;
-      i.icon {
-        display: inline-block;
-        width: initial;
-        margin-right: 10px;
-      }
-      .content {
-        font-size: 14px;
-        line-height: 24px;
-        color: #666;
-        // text-indent: 2em;
-      }
-      .item-title {
-        .icon {
-          font-size: 48px;
-          color: #0457b7;
-          display: inline-block;
-          line-height: 100%;
-          margin: 4px auto;
-          margin-right: 10px;
-        }
-        .title-content {
+  .row {
+    padding: 40px 150px 30px 150px;
+  }
+  .title {
+    line-height: 48px;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .sub-title {
+    text-align: center;
+    color: #606266;
+    padding-bottom: 30px;
+  }
+  .first-section {
+    padding: @content-area-padding;
+    padding-bottom: 15px;
+    .icons {
+      .icon-item {
+        display: block;
+        i.icon {
           display: inline-block;
           width: initial;
-          .title,
-          .sub-title {
-            padding: 0;
-            margin: 0;
-            text-align: left;
+          margin-right: 10px;
+        }
+        .content {
+          font-size: 14px;
+          line-height: 24px;
+          color: #666;
+          // text-indent: 2em;
+        }
+        .item-title {
+          .icon {
+            font-size: 48px;
+            color: #0457b7;
+            display: inline-block;
+            line-height: 100%;
+            margin: 4px auto;
+            margin-right: 10px;
           }
-          .title {
-            font-size: 18px;
-            line-height: 36px;
-          }
-          .sub-title {
-            font-size: 14px;
-            line-height: 18px;
+          .title-content {
+            display: inline-block;
+            width: initial;
+            .title,
+            .sub-title {
+              padding: 0;
+              margin: 0;
+              text-align: left;
+            }
+            .title {
+              font-size: 18px;
+              line-height: 36px;
+            }
+            .sub-title {
+              font-size: 14px;
+              line-height: 18px;
+            }
           }
         }
       }
     }
   }
-}
-.service-area {
-  padding: 15px 18%;
-  width: calc(100% - 36%);
-  height: 460px;
-  background-color: #f3f3f3;
+  .service-area {
+    padding: 15px 18%;
+    width: calc(100% - 36%);
+    height: 460px;
+    background-color: #f3f3f3;
 
-  .item {
-    .icon,
-    .font {
-      color: #74808f;
-    }
-    .icon {
-      display: block;
-      font-size: 40px;
-      width: 100%;
-      text-align: center;
-    }
-    .font {
-      width: 100%;
-      text-align: center;
-      font-size: 16px;
+    .item {
+      .icon,
+      .font {
+        color: #74808f;
+      }
+      .icon {
+        display: block;
+        font-size: 40px;
+        width: 100%;
+        text-align: center;
+      }
+      .font {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+      }
     }
   }
 }
