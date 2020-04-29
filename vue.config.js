@@ -1,5 +1,4 @@
 module.exports = {
   outputDir: "dist",
-  publicPath:
-    process.env.NODE_ENV === "production" ? "/company-site-frontend" : "/"
+  publicPath: process.env.VUE_APP_PUBLIC_PATH
 };
